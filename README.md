@@ -80,9 +80,9 @@ After the repository is cloned to the Raspberry Pi, you must connect VS Code on 
 
 In VS Code on the PC:
 
-1. Install `Remote - SSH`
-2. Install `C/C++`
-3. Connect to the Raspberry Pi with `Remote-SSH: Connect to Host...`
+1. Install the `Remote - SSH` extension
+2. Install the `C/C++` extension
+3. Press `F1`, run `Remote-SSH: Connect to Host...`, then enter `pi@192.168.64.125`
 4. Wait for VS Code to open a new remote window connected to the Pi
 5. In that remote window, open the folder `/home/pi/hello_world_remote`
 
