@@ -1,0 +1,45 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug hello_debug (Remote-SSH)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "/home/pi/hello_world_remote/hello_debug",
+      "cwd": "/home/pi/hello_world_remote",
+      "preLaunchTask": "build debug",
+      "targetArchitecture": "arm64",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "externalConsole": false,
+      "stopAtEntry": false,
+      "setupCommands": [
+        {
+          "description": "Enable pretty printing",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "Run hello release (Remote-SSH)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "/home/pi/hello_world_remote/hello",
+      "cwd": "/home/pi/hello_world_remote",
+      "preLaunchTask": "build release",
+      "targetArchitecture": "arm64",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "externalConsole": false,
+      "stopAtEntry": false,
+      "setupCommands": [
+        {
+          "description": "Enable pretty printing",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
